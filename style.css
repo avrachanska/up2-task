@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 header {
@@ -17,6 +17,7 @@ header a {
 a {
     text-decoration: none;
     color: orange;
+    font-size: 22px;
 }
 
 footer {
@@ -36,6 +37,10 @@ footer {
     width: 100%;
 }
 
+.article-img {
+    padding-bottom: 30px;
+}
+
 .screen-title {
     color: orange;
     font-size: 47px;
@@ -49,7 +54,7 @@ footer {
 }
 
 .centered {
-    padding: 20px 0;
+    padding: 20px 200px;
 }
 
 .summary {
@@ -59,7 +64,14 @@ footer {
 
 .text-muted {
     color: gray;
-    margin: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+.font-sm {
+    font-size: 15px;
 }
 
 .pull-right {
@@ -68,6 +80,10 @@ footer {
 
 .padder {
     padding: 10px 15px;
+}
+
+.top-pad {
+    padding-top: 50px;
 }
 
 .orange-bgd {
@@ -87,6 +103,17 @@ footer {
 
 .col-1:not(:last-child) {
     padding-right: 20px;
+}
+
+.col-2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    width: 66%;
+}
+
+.wide-len {
+    width: 66%;
 }
 
 .container {
@@ -119,10 +146,8 @@ footer {
 
 .article-title {
     color: darkcyan;
-    font-size: 25px;
-    width: 66%;
-    height: 300px;
-    float: right;
+    font-size: 23px;
+    min-height: 300px;
     position: relative;
 }
 
@@ -135,9 +160,61 @@ footer {
     border:  solid grey;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
+    body {
+        font-size: 18px;
+    }
+    .col-1 {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    .col-2 {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        width: 100%;
+    }
+    header {
+        font-size: 20px;
+    }
     .centered {
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .article-title {
+        width: 100%;
+        font-size: 21px;
+        min-height: 0;
+    }
+    .article-title > h2 {
+        position: static;
+        bottom: unset;
+    }
+    .article-img {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .screen-title {
+        margin-top: 0;
+        font-size: 40px;
+    }
+    .summary {
+        padding-top: 0;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    .container {
+        margin: 0 20px;
+        padding-top: 40px;
+        padding-bottom: 5px;
+    }
+    .wide-len {
+        width: 100%;
+    }
+    footer {
+        padding: 20px 20px;
     }
 }
