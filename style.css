@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    font-size: 22px;
+}
+
+header a {
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+footer {
+    padding: 20px 50px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.home-img {
+    width: 100%;
+}
+
+.screen-title {
+    color: orange;
+    font-size: 47px;
+    font-weight: 500;
+    margin-top: 130px;
+}
+
+#link-text {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.centered {
+    padding: 20px 0;
+}
+
+.summary {
+    color: darkcyan;
+    padding-top: 120px;
+}
+
+.text-muted {
+    color: gray;
+    margin: 0;
+}
+
+.pull-right {
+    float: right;
+}
+
+.padder {
+    padding: 10px 15px;
+}
+
+.orange-bgd {
+    background-color: orange;
+    color: white;
+}
+
+.topic {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.col-1 {
+    width: 33%;
+    float: left;
+}
+
+.col-1:not(:last-child) {
+    padding-right: 20px;
+}
+
+.container {
+    margin: 0 50px;
+    padding-top: 70px;
+    padding-bottom: 15px;
+}
+
+.borders {
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: ' ';
+    clear: both;
+    display: table;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.article-title {
+    color: darkcyan;
+    font-size: 25px;
+    width: 66%;
+    height: 300px;
+    float: right;
+    position: relative;
+}
+
+.article-title > h2 {
+    position: absolute;
+    bottom: 0;
+}
+
+.line {
+    border:  solid grey;
+}
+
+@media (min-width: 1000px) {
+    .centered {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
