@@ -4,6 +4,15 @@ body {
     font-size: 19px;
 }
 
+.page {
+    background-color: white;
+    border: 1px solid silver;
+}
+
+.page + .page {
+    margin-top: 15px;
+}
+
 header {
     position: relative;
     width: 100%;
@@ -21,6 +30,10 @@ a {
 }
 
 footer {
+    padding: 20px 50px;
+}
+
+.page-footer {
     padding: 20px 50px;
 }
 
